@@ -1,6 +1,5 @@
-package org.example.com.seaford.simplepersistenceservice.repo
+package com.seaford.simplepersistenceservice
 
-import org.example.com.seaford.simplepersistenceservice.domain.Song
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository
 

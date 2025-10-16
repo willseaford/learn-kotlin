@@ -1,4 +1,4 @@
-package org.example.com.seaford.simplepersistenceservice.domain
+package com.seaford.simplepersistenceservice
 
 import jakarta.persistence.Entity
 import jakarta.persistence.Id

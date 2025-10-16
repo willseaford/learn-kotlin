@@ -1,13 +1,17 @@
-package org.example.com.seaford.simplepersistenceservice.controller
+package com.seaford.simplepersistenceservice
 
-import org.example.com.seaford.simplepersistenceservice.domain.Song
-import org.example.com.seaford.simplepersistenceservice.service.SongService
-import org.springframework.stereotype.Controller
+import com.seaford.simplepersistenceservice.service.SongService
+import org.springframework.web.bind.annotation.PostMapping
+import org.springframework.web.bind.annotation.RequestBody
+import org.springframework.web.bind.annotation.RequestMapping
+import org.springframework.web.bind.annotation.RestController
 
-@Controller
+@RestController
+@RequestMapping("/")
 class SongController(val songService: SongService) {
 
-    fun saveSong(song: Song): Song {
+    @PostMapping("/songs")
+    fun saveSong(@RequestBody song: Song): Song {
         return songService.saveSang(song)
     }
 }
